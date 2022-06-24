@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Olá pagina Login</h1>
-    <MyText/>
+    <MyText />
   </div>
 </template>
 
