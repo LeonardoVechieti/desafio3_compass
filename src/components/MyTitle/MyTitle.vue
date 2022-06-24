@@ -1,6 +1,5 @@
 <template>
   <div class="MyTitle" :type="type" :content="content">
-    <p>Componente TITLE</p>
     <h1 v-show="h1">{{ cnt }}</h1>
     <h2 v-show="h2">{{ cnt }}</h2>
     <h3 v-show="h3">{{ cnt }}</h3>
@@ -65,3 +64,8 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+@import './MyTitle.scss'
+</style>
