@@ -1,14 +1,19 @@
 
 <template>
-    <p :class="MyText">OlaText</p>
+    <p :class="MyText" :text="text">{{ text }}</p>
 </template>
 
 <script>
 export default {
     name: "MyText",
     props: {
-        Text: String
-    }
+        MyText: {
+            type: String
+        },
+        text: {
+            type: String
+        }
+    },
 }
 </script>
 

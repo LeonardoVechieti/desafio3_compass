@@ -11,7 +11,7 @@ export default {
   
   name: "PageHome",
   components: {
-    
+
     MyTitle
   },
 };
