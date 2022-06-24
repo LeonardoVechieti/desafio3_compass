@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Olá pagina Home</h1>
-    <MyTitle />
+    <MyTitle type="h1" content="MyTitle" />
   </div>
 </template>
 <script>
