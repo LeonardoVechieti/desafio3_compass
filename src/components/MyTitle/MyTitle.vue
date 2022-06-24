@@ -28,7 +28,8 @@ export default {
   },
   props: {
     type: {
-      type: String
+      type: String,
+      default: "h1"
     },
     content: {
       type: String,
