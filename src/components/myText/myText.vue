@@ -1,10 +1,11 @@
+
 <template>
-    <p :class="myText">OlaText</p>
+    <p :class="MyText">OlaText</p>
 </template>
 
 <script>
 export default {
-    name: "myText",
+    name: "MyText",
     props: {
         Text: String
     }
@@ -12,7 +13,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-@import './myText.scss'
-
+@import './MyText.scss'
 </style>
