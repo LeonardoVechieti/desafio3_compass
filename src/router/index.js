@@ -1,22 +1,27 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import PageHome from '../views/PageHome/PageHome.vue'
+import PageLogin from '../views/PageLogin/PageLogin.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  //esse é o padrão para todas as rotas.
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'Login',
+    component: PageLogin
+  },
+  //cado utilizar o /login, o componente PageLogin será exibido, tambem apenas com o "/" como na rota padrão.
+  {
+    path: '/login',
+    name: 'Login',
+    component: PageLogin
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/home',
+    name: 'Home',
+    component: PageHome
   }
 ]
 

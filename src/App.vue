@@ -1,26 +1,13 @@
 <template>
   <div id="app">
-    
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <myText />
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import myText from './components/myText/myText.vue'
-
 export default {
   name: "app",
-  components: {
-    myText
-  }
-}
-
-</script>
+};
 
 <style lang="scss">
 #app {
@@ -44,3 +31,4 @@ nav {
   }
 }
 </style>
+
