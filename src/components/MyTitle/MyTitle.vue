@@ -1,11 +1,11 @@
 <template>
   <div class="MyTitle" :type="type" :content="content">
-    <h1 v-show="h1">{{ cnt }}</h1>
-    <h2 v-show="h2">{{ cnt }}</h2>
-    <h3 v-show="h3">{{ cnt }}</h3>
-    <h4 v-show="h4">{{ cnt }}</h4>
-    <h5 v-show="h5">{{ cnt }}</h5>
-    <h6 v-show="h6">{{ cnt }}</h6>
+    <h1 :class="size" v-show="h1">{{ cnt }}</h1>
+    <h2 :class="size" v-show="h2">{{ cnt }}</h2>
+    <h3 :class="size" v-show="h3">{{ cnt }}</h3>
+    <h4 :class="size" v-show="h4">{{ cnt }}</h4>
+    <h5 :class="size" v-show="h5">{{ cnt }}</h5>
+    <h6 :class="size" v-show="h6">{{ cnt }}</h6>
   </div>
 </template>
 
@@ -32,7 +32,11 @@ export default {
     },
     content: {
       type: String,
-    }
+    },
+    size: {
+      type: String,
+      default: ""
+    },
   },
   methods: {
     ...mapActions(["setTitleType"]),
