@@ -1,13 +1,13 @@
 
 <template>
-    <p :class="MyText" :text="text">{{ text }}</p>
+    <p :class="size" :text="text">{{ text }}</p>
 </template>
 
 <script>
 export default {
     name: "MyText",
     props: {
-        MyText: {
+        size: {
             type: String
         },
         text: {

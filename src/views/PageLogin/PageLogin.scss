@@ -1,3 +1,32 @@
+
 #PageLogin {
+   
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+    display: flex;
+    justify-content: space-between;
+}
+.date {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+.container {
+    // background-color: blue;
+    
+    flex-direction: column;
+    width: 60%;
+    
+    
+    
+    
+}
+.img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    position: absolute;
+    width: 25%;
 }
