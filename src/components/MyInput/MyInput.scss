@@ -1,0 +1,28 @@
+.inputs{
+    box-sizing: border-box;
+    width: 25vw;
+    height: 8vh;
+    margin-top: 33px;
+    border-radius: 50px;
+    border-color: #ffffff;
+    font-size: 1em;
+    background: #26292c;
+    color: #ffffff;
+    outline: none;
+    padding-left: 20px;
+
+    &::placeholder{
+        color: #ffffff;
+    }
+}
+
+.register{
+    width: 25vw;
+    height: 8vh;
+    margin-top: 33px;
+    border-radius: 50px;
+    background: #ff2d04;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+}
