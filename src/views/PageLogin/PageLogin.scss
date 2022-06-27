@@ -1,9 +1,8 @@
 
-#PageLogin {
-   
+.page-login {
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
     display: flex;
-    justify-content: space-between;
+    
 }
 .date {
     width: 50%;
@@ -16,11 +15,14 @@
     
     flex-direction: column;
     width: 60%;
-    
-    
-    
-    
 }
+.logo-mobile{
+    display: none;
+}
+.title {
+    margin-top: 0.5em;
+}
+
 .img {
     width: 50%;
     display: flex;
@@ -29,4 +31,26 @@
 .logo {
     position: absolute;
     width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        display: none;
+    }
+    .logo-mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .title {
+        margin-top: 0;
+    }
+   
+    .date {
+        width: 100%;
+    }
+    .container {
+        width: 70%;
+    }
+    
 }

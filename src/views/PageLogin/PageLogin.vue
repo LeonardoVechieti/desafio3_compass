@@ -1,26 +1,17 @@
 <template>
-  <div id="PageLogin">
+  <div class="page-login">
     <div class="date">
       <div class="container">
-        <MyTitle type="h1" content="Olá," size="size-60px" />
-        <MyText size="size-16px"
+        <MyImg img="img/logo.png" desc="logo" class="logo-mobile" />
+        <MyTitle type="h1" content="Olá," size="size-60px" class="title"/>
+        <MyText
+          size="size-16px"
           text="Para continuar navegando de forma segura, efetue o login na rede."
         />
-        <MyTitle type="h2" content="Login" size="size-30px"/>
-        <MyInput 
-        Type="text"
-        classInputs="inputs"
-        placeholder="Usuário"
-        />
-        <MyInput
-          Type="text"
-          classInputs="inputs"
-          placeholder="Senha"
-        />
-        <MyInput
-          Type="submit"
-          classInputs="register"
-        />
+        <MyTitle type="h2" content="Login" size="size-30px" class="login"/>
+        <MyInput Type="text" classInputs="inputs" placeholder="Usuário" class="input" />
+        <MyInput Type="text" classInputs="inputs" placeholder="Senha" class="input"/>
+        <MyInput Type="submit" classInputs="register" />
       </div>
     </div>
     <div class="img">
@@ -45,8 +36,8 @@ export default {
     MyText,
     MyTitle,
     MyImg,
-    MyInput
-},
+    MyInput,
+  },
 };
 </script>
 
