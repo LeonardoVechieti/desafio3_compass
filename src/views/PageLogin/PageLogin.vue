@@ -6,6 +6,7 @@
         <MyText size="size-16px"
           text="Para continuar navegando de forma segura, efetue o login na rede."
         />
+        <MyTitle type="h2" content="Login" size="size-30px"/>
         <MyInput 
         Type="text"
         classInputs="inputs"
