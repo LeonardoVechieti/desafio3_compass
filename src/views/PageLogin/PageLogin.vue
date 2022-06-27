@@ -6,6 +6,21 @@
         <MyText size="size-16px"
           text="Para continuar navegando de forma segura, efetue o login na rede."
         />
+        <MyTitle type="h2" content="Login" size="size-30px"/>
+        <MyInput 
+        Type="text"
+        classInputs="inputs"
+        placeholder="Usuário"
+        />
+        <MyInput
+          Type="text"
+          classInputs="inputs"
+          placeholder="Senha"
+        />
+        <MyInput
+          Type="submit"
+          classInputs="register"
+        />
       </div>
     </div>
     <div class="img">
@@ -23,13 +38,15 @@
 import MyText from "@/components/MyText/MyText.vue";
 import MyTitle from "@/components/MyTitle/MyTitle.vue";
 import MyImg from "@/components/MyImg/MyImg.vue";
+import MyInput from "@/components/MyInput/MyInput.vue";
 export default {
   name: "PageLogin",
   components: {
     MyText,
     MyTitle,
     MyImg,
-  },
+    MyInput
+},
 };
 </script>
 
