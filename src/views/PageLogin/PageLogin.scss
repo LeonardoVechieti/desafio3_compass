@@ -33,6 +33,16 @@
     width: 25%;
 }
 
+.input-icon{
+    position: relative;
+    label{
+      position: absolute;
+      top: 45px;
+      left: 27vw;
+      color: #ffffff;
+    }
+  }
+
 @media screen and (max-width: 768px) {
     .img {
         display: none;
@@ -53,4 +63,9 @@
         width: 70%;
     }
     
+    .input-icon{
+        label{
+            left: 61vw;
+        }
+    }
 }

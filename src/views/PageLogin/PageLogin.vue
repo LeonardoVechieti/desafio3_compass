@@ -9,9 +9,15 @@
           text="Para continuar navegando de forma segura, efetue o login na rede."
         />
         <MyTitle type="h2" content="Login" size="size-30px" class="login"/>
-        <MyInput Type="text" classInputs="inputs" placeholder="Usuário" class="input" />
-        <MyInput Type="text" classInputs="inputs" placeholder="Senha" class="input"/>
-        <MyInput Type="submit" classInputs="register" />
+        <div class="input-icon">
+          <label for="user"><i class="fa fa-user"></i></label>
+          <MyInput Type="text" idInputs="user" classInputs="inputs" placeholder="Usuário" class="input" />
+        </div>
+        <div class="input-icon">
+          <label for="user"><i class="fa fa-lock"></i></label>
+          <MyInput Type="text" classInputs="inputs" placeholder="Senha" class="input"/>
+        </div>
+        <MyInput Type="submit" classInputs="register" value="Continuar" />
       </div>
     </div>
     <div class="img">
