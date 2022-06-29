@@ -1,23 +1,24 @@
 <template>
   <div>
-    <img class="img" :src="img" :alt="desc" />
+    <img
+      :id="id"
+      class="img"
+      :src="require(`@/assets/${image}.png`)"
+      :alt="desc"
+    />
   </div>
 </template>
 <script>
 export default {
   name: "MyImg",
   props: {
-      img: String,
-      desc: String,
-  },
+    image: String,
+    desc: String,
+    id: String,
+  }
 };
 </script>
-<style scoped>
-.img {
-    width: 100%;
-    height: 100%; 
-}
- 
 
+<style lang="sass" scoped>
+@import './MyImg.scss'
 </style>
-

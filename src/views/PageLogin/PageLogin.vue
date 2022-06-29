@@ -2,7 +2,7 @@
   <div class="page-login">
     <div class="date">
       <div class="container">
-        <MyImg img="img/logo.png" desc="logo" class="logo-mobile" />
+        <MyImg image="logo" desc="logo" class="logo-mobile" />
         <MyTitle type="h1" content="Olá," size="size-60px" class="title"/>
         <MyText
           size="size-16px"
@@ -21,11 +21,12 @@
       </div>
     </div>
     <div class="img">
-      <div class="logo">
-        <MyImg img="img/logo.png" desc="logo" />
-      </div>
+      <!-- <div class="logo">
+        
+      </div> -->
+
       <div class="fundo">
-        <MyImg img="img/fundo.png" desc="fundo" />
+        <MyImg image="logo" desc="logo" id="image-logo" />
       </div>
     </div>
   </div>
