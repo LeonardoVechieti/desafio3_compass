@@ -11,11 +11,11 @@
         <MyTitle type="h2" content="Login" size="size-30px" class="login"/>
         <div class="input-icon">
           <label for="user"><i class="fa fa-user"></i></label>
-          <MyInput Type="text" idInputs="user" classInputs="inputs" placeholder="Usuário" class="input" />
+          <MyInput Type="text" idInputs="user" classInputs="inputs" placeholder="Usuário" class="input" model="user.username" />
         </div>
         <div class="input-icon">
           <label for="password"><i class="fa fa-lock"></i></label>
-          <MyInput Type="text" idInputs="password" classInputs="inputs" placeholder="Senha" class="input"/>
+          <MyInput Type="text" idInputs="password" classInputs="inputs" placeholder="Senha" class="input" model="user.password"/>
         </div>
         <MyInput Type="submit" idInputs="submit" classInputs="register" value="Continuar" />
       </div>

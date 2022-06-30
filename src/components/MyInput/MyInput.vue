@@ -17,6 +17,7 @@ import { mapActions } from 'vuex';
 
 export default {
   name: "MyInput",
+  
   props: {
     Type: {
       type: String,
