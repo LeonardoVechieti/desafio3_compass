@@ -1,6 +1,6 @@
 
 <template>
-    <p :class="size" :text="text">{{ text }}</p>
+    <p :class="size" :id="id" :text="text">{{ text }}</p>
 </template>
 
 <script>
@@ -11,6 +11,9 @@ export default {
             type: String
         },
         text: {
+            type: String
+        },
+        id: {
             type: String
         }
     },

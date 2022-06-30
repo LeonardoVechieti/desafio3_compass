@@ -1,0 +1,56 @@
+.header {
+    font-family: 'Poppins';    
+    // background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100%;
+
+}
+.logo{
+    width: 33%;
+    height: 100%;
+}
+.time{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: aquamarine; 
+    flex-direction: column;
+}
+.temp{
+    width: 35%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 1em;
+    
+}
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+p{
+    font-size: 1.5em;
+    margin: 0;
+}	
+.message{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end;
+    // background-color: aqua;
+    margin-right: 4em;
+     margin-top: 4em;
+    
+}
+img{
+    display: absolute;
+    width: 600px;
+    height: 600px;;
+    
+ 
+
+}

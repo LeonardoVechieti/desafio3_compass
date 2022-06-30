@@ -14,10 +14,10 @@
           <MyInput Type="text" idInputs="user" classInputs="inputs" placeholder="Usuário" class="input" />
         </div>
         <div class="input-icon">
-          <label for="user"><i class="fa fa-lock"></i></label>
-          <MyInput Type="text" classInputs="inputs" placeholder="Senha" class="input"/>
+          <label for="password"><i class="fa fa-lock"></i></label>
+          <MyInput Type="text" idInputs="password" classInputs="inputs" placeholder="Senha" class="input"/>
         </div>
-        <MyInput Type="submit" classInputs="register" value="Continuar" />
+        <MyInput Type="submit" idInputs="submit" classInputs="register" value="Continuar" />
       </div>
     </div>
     <div class="img">
