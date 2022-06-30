@@ -1,7 +1,7 @@
 
 <template>
     <div class="button">
-    <button :class="classButton" @click="buttonRegister">{{ name }}</button>
+    <button>{{ name }}</button>
   </div>
 </template>
 
