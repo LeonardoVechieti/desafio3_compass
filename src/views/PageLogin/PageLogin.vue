@@ -15,16 +15,12 @@
         </div>
         <div class="input-icon">
           <label for="password"><i class="fa fa-lock"></i></label>
-          <MyInput Type="text" idInputs="password" classInputs="inputs" placeholder="Senha" class="input"/>
+          <MyInput Type="password" idInputs="password" classInputs="inputs" placeholder="Senha" class="input"/>
         </div>
         <MyInput Type="submit" idInputs="submit" classInputs="register" value="Continuar" />
       </div>
     </div>
     <div class="img">
-      <!-- <div class="logo">
-        
-      </div> -->
-
       <div class="fundo">
         <MyImg image="logo" desc="logo" id="image-logo" />
       </div>
@@ -37,6 +33,7 @@ import MyText from "@/components/MyText/MyText.vue";
 import MyTitle from "@/components/MyTitle/MyTitle.vue";
 import MyImg from "@/components/MyImg/MyImg.vue";
 import MyInput from "@/components/MyInput/MyInput.vue";
+
 export default {
   name: "PageLogin",
   components: {
