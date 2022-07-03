@@ -64,6 +64,12 @@ p{
         display: none;
     }
 }
+
+@media screen and (max-width: 1185px){
+    .text2{
+        display: none;
+    }
+}
 .item-message{
     margin-top: 10px;
 }
