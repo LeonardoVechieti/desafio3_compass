@@ -41,7 +41,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions(["setUserName", "setUserPassword", "getUserName", "getUserPassword", "isCharAt", "foo"]),
+    ...mapActions(["setUserName", "setUserPassword", "getUserName", "getUserPassword"]),
 
     getVal(e) {
       if(this.idInputs === "user") {
@@ -59,7 +59,7 @@ export default {
     
     submitVal() {
       if(this.Type === "submit") {
-        //TODO: Find a way to make this work
+        //TODO: Find a way to make this worka
       }
     }
 
