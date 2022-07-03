@@ -12,12 +12,6 @@ const routes = [
     name: 'Login',
     component: PageLogin
   },
-  //cado utilizar o /login, o componente PageLogin será exibido, tambem apenas com o "/" como na rota padrão.
-  {
-    path: '/login',
-    name: 'Login',
-    component: PageLogin
-  },
   {
     path: '/home',
     name: 'Home',
