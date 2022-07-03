@@ -6,8 +6,7 @@
       </div>
 
       <div class="time">
-        <h1>11:26</h1>
-        <p>terça-feira, 17 de março de 2020</p>
+        <ApiClock />
       </div>
 
       <div class="temp">
@@ -83,13 +82,16 @@
 import MyImg from "@/components/MyImg/MyImg.vue";
 import MyText from "@/components/MyText/MyText.vue";
 import ApiWeather from "@/components/ApiWeather/ApiWeather.vue";
+import ApiClock from "@/components/ApiClock/ApiClock.vue";
 
 export default {
   name: "PageHome",
   components: {
     MyImg,
     MyText,
-    ApiWeather
+    ApiWeather,
+    ApiClock
+
   },
   methods: {
     continuar() {
