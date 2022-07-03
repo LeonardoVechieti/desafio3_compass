@@ -11,9 +11,7 @@
       </div>
 
       <div class="temp">
-        <MyText size="size-16px" text="Passo Fundo - RS" id="black-bold" />
-        <p></p>
-        <h1>22°</h1>
+        <ApiWeather />
       </div>
     </div>
     <div class="container">
@@ -84,12 +82,14 @@
 <script>
 import MyImg from "@/components/MyImg/MyImg.vue";
 import MyText from "@/components/MyText/MyText.vue";
+import ApiWeather from "@/components/ApiWeather/ApiWeather.vue";
 
 export default {
   name: "PageHome",
   components: {
     MyImg,
     MyText,
+    ApiWeather
   },
   methods: {
     continuar() {
