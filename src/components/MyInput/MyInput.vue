@@ -13,10 +13,19 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
+import router from '@/router';
+import { mapActions, mapGetters } from 'vuex';
 
 export default {
   name: "MyInput",
+  
+
+  data() {
+    return {
+      isOK: false
+    }
+  },
+
   props: {
     Type: {
       type: String,
@@ -40,7 +49,8 @@ export default {
     },
   },
   methods: {
-    ...mapActions(["setUserName", "setUserPassword", "getUserName", "getUserPassword", "isCharAt", "foo"]),
+    ...mapActions(["setUserName", "setUserPassword"]),
+    ...mapGetters(["getUserName", "getUserPassword"]),
 
     getVal(e) {
       if(this.idInputs === "user") {
@@ -58,7 +68,22 @@ export default {
     
     submitVal() {
       if(this.Type === "submit") {
-        //TODO: Find a way to make this work
+        let userName = this.getUserName();
+        let userPassword = this.getUserPassword();
+
+        if(userName.includes('.')) {
+          this.isOK = true
+        }
+
+        if(userPassword.length > 6 && userPassword.length < 9) {
+          this.isOK = true
+        }
+
+        if(this.isOK) {
+          router.push("/home")
+        }
+
+        
       }
     }
 
