@@ -1,16 +1,8 @@
 <template>
   <div>
-    <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
-      <div class="location-box">
-        <div class="location">
-          {{ weather.name }} , {{ weather.sys.country }}
-        </div>
+    <div class="clock-date" v-if="typeof weather.main != 'undefined'">
+        <p class="clock">{{hora}}</p>
         <div class="date">{{ dateBuilder() }}</div>
-      </div>
-      <div class="weather-box">
-        <div class="temp">{{ Math.round(weather.main.temp) }} °C</div>
-        <div class="weather">{{ weather.weather[0].main }}</div>
-      </div>
     </div>
   </div>
 </template>
@@ -25,20 +17,24 @@ export default {
       query: "",
       lang: "pt_br",
       weather: {},
+      hora: this.formData()
     };
   },
   created() {
     this.cordenadas();
   },
   methods: {
+    formData() {
+        let data = new Date();
+        let hora = data.getHours();
+        let minutos = data.getMinutes();
+        return `${hora}:${minutos} `
+    },
     cordenadas() {
-      console.log("cordenadas");
+   
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           (position) => {
-            console.log(position.coords.latitude);
-            console.log(position.coords.longitude);
-
             this.fetchWeather(
               position.coords.latitude,
               position.coords.longitude
@@ -94,7 +90,7 @@ export default {
       let date = d.getDate();
       let month = months[d.getMonth()];
       let year = d.getFullYear();
-      return `${day} ${date} ${month} ${year}`;
+      return `${day}, ${date} de ${month} de ${year}`;
     },
   },
 };
