@@ -64,8 +64,7 @@
         <MyText size="size-16px" text="Application refresh in" />
       </div>
       <div class="text3">
-        <MyText size="size-64px" text="600" />
-        <MyText size="size-16px" text="seconds" />
+        <MyTimer />
       </div>
       <div class="buttons">
         <div class="button1" @click="continuar()">
@@ -83,6 +82,7 @@ import MyImg from "@/components/MyImg/MyImg.vue";
 import MyText from "@/components/MyText/MyText.vue";
 import ApiWeather from "@/components/ApiWeather/ApiWeather.vue";
 import ApiClock from "@/components/ApiClock/ApiClock.vue";
+import MyTimer from "@/components/MyTimer/MyTimer.vue";
 
 export default {
   name: "PageHome",
@@ -90,9 +90,9 @@ export default {
     MyImg,
     MyText,
     ApiWeather,
-    ApiClock
-
-  },
+    ApiClock,
+    MyTimer
+},
   methods: {
     continuar() {
       this.$router.push("/home");
