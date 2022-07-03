@@ -72,6 +72,8 @@ p{
      position: relative;
      bottom: -15vh;
      left: -5vw;
+     pointer-events: none;
+     user-select: none;
      @media screen and (max-width: 900px) {
             max-width: 500px;
             width: 500px;
