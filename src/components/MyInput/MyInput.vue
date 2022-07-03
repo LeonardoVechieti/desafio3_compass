@@ -41,7 +41,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions(["setUserName", "setUserPassword", "getUserName", "getUserPassword", "isCharAt", "foo"]),
+    ...mapActions(["setUserName", "setUserPassword", "getUserName", "getUserPassword"]),
 
     getVal(e) {
       if(this.idInputs === "user") {
