@@ -4,7 +4,6 @@
       <div class="logo">
         <MyImg image="logo2" desc="logo" class="" id="image-logo2" />
       </div>
-
       <div class="time">
         <ApiClock />
       </div>

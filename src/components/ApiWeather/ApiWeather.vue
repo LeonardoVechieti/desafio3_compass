@@ -31,6 +31,7 @@ export default {
   },
   methods: {
     cordenadas() {
+
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           (position) => {

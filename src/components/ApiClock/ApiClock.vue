@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="clock-date" v-if="typeof weather.main != 'undefined'">
+    <div class="clock-date" >
         <p class="clock">{{hora}}</p>
-        <div class="date">{{ dateBuilder() }}</div>
+        <div class="date">{{ date }}</div>
     </div>
   </div>
 </template>
@@ -17,11 +17,14 @@ export default {
       query: "",
       lang: "pt_br",
       weather: {},
-      hora: this.formData()
+      hora: this.formData(),
+      date: "Terça-feira, 10 de Janeiro de 2020"
+      
     };
   },
   created() {
     this.cordenadas();
+    this.date = this.dateBuilder();
   },
   methods: {
     formData() {
@@ -91,6 +94,7 @@ export default {
       let month = months[d.getMonth()];
       let year = d.getFullYear();
       return `${day}, ${date} de ${month} de ${year}`;
+      
     },
   },
 };
