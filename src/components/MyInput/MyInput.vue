@@ -59,7 +59,7 @@ export default {
     
     submitVal() {
       if(this.Type === "submit") {
-        //TODO: Find a way to make this work
+        //TODO: Find a way to make this worka
       }
     }
 
