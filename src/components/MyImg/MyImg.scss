@@ -1,5 +1,7 @@
 .img {
     width: 50vw;
+    pointer-events: none;
+    user-select: none;
   }
   #image-logo {
     margin: 0;
