@@ -1,64 +1,43 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
 Vue.use(Vuex)
-
 export default new Vuex.Store({
   state: {
     userName: "",
-    userPassword: ""
+    userPassword: "",
+    OK: false
   },
   getters: {
-  },
-  mutations: {
     getUserName(state) {
       return state.userName;
     },
-
     getUserPassword(state) {
       return state.userPassword;
     },
-
-    isCharAtName(state, char) {
-      return state.userName.includes(char);
-    },
-
-    foo(state) {
-      return typeof(state.userName)
-    },
-
+    getOK(state) {
+      return state.OK
+    }
+  },
+  mutations: {
     setUserName(state, name) {
       state.userName = name;
     },
-
     setUserPassword(state, password) {
       state.userPassword = password;
+    },
+    setOK(state, ok) {
+      state.ok = ok
     }
   },
   actions: {
-
-    getUserName({ commit }) {
-      commit("getUserName");
-    },
-
-    getUserPassword({ commit }) {
-      commit("getUserPassword");
-    },
-
     setUserName({ commit }, name) {
       commit("setUserName", name);
     },
-
     setUserPassword({ commit }, password) {
-      commit("setUserPassword", password); 
+      commit("setUserPassword", password);
     },
-
-    isCharAt({ commit }, char) {
-      commit("isCharAt", char);
-    },
-
-    foo({ commit }) {
-      commit("foo")
+    setOK({ commit }, ok) {
+      commit("setOK", ok)
     }
   },
   modules: {
