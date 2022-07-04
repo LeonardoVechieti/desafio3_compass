@@ -1,0 +1,166 @@
+.header {
+    font-family: 'Poppins';    
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100%;
+}
+.logo{
+    width: 33%;
+    height: 100%;
+    @media screen and (max-width: 850px) {
+        width: 50%;
+    }
+}
+.time{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
+}
+.temp{
+    width: 35%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 1em;
+    text-align: center;
+    @media screen and (max-width: 750px) {
+        width: 50%;
+    }
+}
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+p{
+    font-size: 1.5em;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}	
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 1em;
+    margin-top: 4em;
+    width: 60%;
+    height: 100%;
+    @media screen and (max-width: 1200px) {
+        width: 75%;
+    }
+    @media screen and (max-width: 1050px) {
+        display: none;
+    }
+}
+@media screen and (max-width: 1185px){
+    .text2{
+        display: none;
+    }
+}
+.item-message{
+    margin-top: 10px;
+}
+ .image{
+     width: 50%;
+     position: relative;
+     bottom: -15vh;
+     left: -5vw;
+     pointer-events: none;
+     user-select: none;
+     @media screen and (max-width: 900px) {
+            max-width: 500px;
+            width: 500px;
+            bottom: 0vh;
+            left: -30vw;
+            position: fixed;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    @media screen and (max-width: 1170px) {
+        justify-content: flex-start;
+    }
+}
+.text1{
+    width: 50%;
+    border-right: 2px solid;
+    border-right-color: #ffffff; 
+    @media screen and (max-width: 1170px) {
+        width: 80%;
+        border: none;
+    }
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
+}
+.text2{
+    width: 15%;
+    @media screen and (max-width: 1170px) {
+        display: none;
+    }
+}
+.text3{
+    width: 15%;
+    @media screen and (max-width: 1170px) {
+        display: none;
+    }
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    height: 15vh;
+    @media screen and (max-width: 850px) {
+        width: 100%;
+    }
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.button1 {
+    background-color: #ffffffd4;
+    width: 50%;
+    max-height: 15vh;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    @media screen and (max-width: 850px) {
+        width: 80%;
+    }
+}
+.button2 {
+    width: 50%;
+    height: 100%;
+    max-height: 15vh;
+    border: none;
+    cursor: pointer;
+    @media screen and (max-width: 850px) {
+        width: 40%;
+        order: -1;
+    }
+}

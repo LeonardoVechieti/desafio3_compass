@@ -1,0 +1,23 @@
+.button{ 
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 131px;
+    height: 99px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+   
+.dark{
+    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.white{
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+    color: red;
+    border: none;
+    cursor: pointer;
+}

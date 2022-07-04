@@ -1,0 +1,10 @@
+div{
+    font-family: 'Poppins'; 
+    align-items: center;
+    font-size: 2.5em;
+    color: #ffffff;
+
+    @media (max-width: 1185px){
+        display: none;
+    }
+}
