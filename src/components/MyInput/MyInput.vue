@@ -12,16 +12,16 @@
   </div>
 </template>
 <script>
-import router from '@/router';
-import { mapActions, mapGetters } from 'vuex';
+import router from "@/router";
+import { mapActions, mapGetters } from "vuex";
 export default {
   name: "MyInput",
   data() {
     return {
-      isOK: false
-    }
+      isOK: false,
+    };
   },
- 
+
   props: {
     Type: {
       type: String,
@@ -48,35 +48,44 @@ export default {
     ...mapActions(["setUserName", "setUserPassword", "setOK"]),
     ...mapGetters(["getUserName", "getUserPassword"]),
     getVal(e) {
-      if(this.idInputs === "user") {
+      if (this.idInputs === "user") {
         this.setUserName(e.target.value);
-        console.log("Username =", e.target.value)
+        console.log("Username =", e.target.value);
         return;
       }
-     
-      if(this.idInputs === "password") {
+
+      if (this.idInputs === "password") {
         this.setUserPassword(e.target.value);
-        console.log("Password =", e.target.value)
+        console.log("Password =", e.target.value);
         return;
       }
     },
-   
+
     submitVal() {
-      if(this.Type === "submit") {
-        let userName = this.getUserName()
-        let userPassword = this.getUserPassword()
-        if(userName.includes('.')) {
-          this.isOK = true
+      if (this.Type === "submit") {
+        document.getElementById("erro").style.display = "none";
+        let userName = this.getUserName();
+        let userPassword = this.getUserPassword();
+        if (userName.includes(".")) {
+          this.isOK = true;
+          document.getElementById("erro").style.display = "none";
+        } else {
+          document.getElementById("erro").style.display = "flex";
         }
-        if(userPassword.length > 6 && userPassword.length < 9) {
-          this.isOK = true
+
+        if (userPassword.length > 6 && userPassword.length < 9) {
+          this.isOK = true;
+          document.getElementById("erro").style.display = "none";
+        } else {
+          document.getElementById("erro").style.display = "flex";
         }
-        if(this.isOK) {
-          router.push('/home')
+
+        if (this.isOK) {
+          localStorage.setItem("token", true);
+          router.push("/home");
         }
-       
       }
-    }
+    },
   },
 };
 </script>

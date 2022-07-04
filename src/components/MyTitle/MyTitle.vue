@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
+import { mapActions } from "vuex";
 
 export default {
   name: "MyTitle",
@@ -22,54 +22,51 @@ export default {
       h4: false,
       h5: false,
       h6: false,
-      cnt: ""
-    }
+      cnt: "",
+    };
   },
   props: {
     type: {
       type: String,
-      default: "h1"
+      default: "h1",
     },
     content: {
       type: String,
     },
     size: {
       type: String,
-      default: ""
+      default: "",
     },
   },
   methods: {
     ...mapActions(["setTitleType"]),
-
-    
   },
   created() {
-    switch(this.type) {
+    switch (this.type) {
       case "h1":
-        this.h1 = true
-        break
+        this.h1 = true;
+        break;
       case "h2":
-        this.h2 = true
-        break
+        this.h2 = true;
+        break;
       case "h3":
-        this.h3 = true
-        break
+        this.h3 = true;
+        break;
       case "h4":
-        this.h4 = true
-        break
+        this.h4 = true;
+        break;
       case "h5":
-        this.h5 = true
-        break
+        this.h5 = true;
+        break;
       case "h6":
-        this.h6 = true
-        break
+        this.h6 = true;
+        break;
     }
-    this.cnt = this.content
-  }
-}
+    this.cnt = this.content;
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
-@import './MyTitle.scss'
+@import "./MyTitle.scss";
 </style>

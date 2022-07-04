@@ -10,12 +10,15 @@ const routes = [
   {
     path: '/',
     name: 'Login',
-    component: PageLogin
+    component: PageLogin,
+    meta: {
+      publica: true
+    }
   },
   {
     path: '/home',
     name: 'Home',
-    component: PageHome
+    component: PageHome,
   }
 ]
 
