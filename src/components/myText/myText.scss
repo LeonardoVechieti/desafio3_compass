@@ -32,7 +32,6 @@ p {
 #red-bold {
     color:#C12D18;
     font-weight: bold;
-
 }
 #black {
     color: #000000;
@@ -41,4 +40,12 @@ p {
 #black-bold {
     color: #000000; 
     font-weight: bold; 
+}
+#erro{
+    padding-top: 10px;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    color: #E9B425;
 }

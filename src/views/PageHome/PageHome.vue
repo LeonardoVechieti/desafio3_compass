@@ -4,7 +4,6 @@
       <div class="logo">
         <MyImg image="logo2" desc="logo" class="" id="image-logo2" />
       </div>
-
       <div class="time">
         <ApiClock />
       </div>
@@ -15,13 +14,33 @@
     </div>
     <div class="container">
       <div class="image">
-        <img src="@/assets/uol2.png" alt="" id="uol-img"/>
+        <img src="@/assets/uol2.png" alt="" id="uol-img" />
       </div>
       <div class="message">
-        <MyText size="size-24px" text="Our mission is" id="red-bold" class="item-message"/>
-        <MyText size="size-24px" text="Nossa missão é" id="black" class="item-message" />
-        <MyText size="size-40px" text="to transform the world" id="red-bold" class="item-message"/>
-        <MyText size="size-20px" text="transformar o mundo" id="black" class="item-message"/>
+        <MyText
+          size="size-24px"
+          text="Our mission is"
+          id="red-bold"
+          class="item-message"
+        />
+        <MyText
+          size="size-24px"
+          text="Nossa missão é"
+          id="black"
+          class="item-message"
+        />
+        <MyText
+          size="size-40px"
+          text="to transform the world"
+          id="red-bold"
+          class="item-message"
+        />
+        <MyText
+          size="size-20px"
+          text="transformar o mundo"
+          id="black"
+          class="item-message"
+        />
         <MyText
           size="size-40px"
           text="building digital experiences"
@@ -68,7 +87,12 @@
       </div>
       <div class="buttons">
         <div class="button1" @click="continuar()">
-          <MyText size="size-16px" text="Continuar Navegando" id="red-bold" class="button" />
+          <MyText
+            size="size-16px"
+            text="Continuar Navegando"
+            id="red-bold"
+            class="button"
+          />
         </div>
         <div class="button2" @click="logout()">
           <MyText size="size-16px" text="Logout" class="button" />
@@ -91,13 +115,15 @@ export default {
     MyText,
     ApiWeather,
     ApiClock,
-    MyTimer
-},
+    MyTimer,
+  },
+  created() {},
   methods: {
     continuar() {
       this.$router.push("/home");
     },
     logout() {
+      localStorage.setItem("token", false);
       this.$router.push("/");
     },
   },
